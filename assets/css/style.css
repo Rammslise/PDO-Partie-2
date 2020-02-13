@@ -1,0 +1,65 @@
+header{
+    background-image: url("../img/headerImg.jpg");
+    min-height: 400px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;   
+}
+.logo{
+    float: right;
+    margin-top: -100px;
+}
+.navbar{
+    background-image: linear-gradient(#f4a543, #ef6649);
+}
+.navbar a{
+    font-family:"times new roman", times, serif;
+    color: white;
+}
+h1, h3, h4, h5, p{
+    font-family:"times new roman", times, serif;
+}
+.carousel-item{
+    background-image: url("../img/backBody.jpg");
+    background-repeat: no-repeat;
+    background-attachment:fixed;
+    background-size: cover;
+    font-family:"times new roman", times, serif;
+}
+.carousel img{
+    height:500px;
+    width: 700px;    
+}
+footer{
+    background-color: #f6d9c7;
+}
+ul, li{
+    list-style: none;
+    font-family:"times new roman", times, serif;
+}
+span{
+    font-weight: bold;
+}
+#inscription{
+    background-color: #007bff;
+    color: white;
+}
+#registration{
+    float: none;
+    margin: 0 auto;
+}
+.formBody{
+    background-image: url("../img/hospital.jpg");
+    background-repeat: no-repeat;
+    background-position: center; 
+    background-size: cover;
+    min-height: 400px;  
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#modify{
+    float: right;
+}
