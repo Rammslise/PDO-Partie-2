@@ -14,4 +14,4 @@
                 <img src="../assets/img/logo.png" alt="logoHospital" width="400px" height="400px" />
             </div>
         </header>
-
+<?php include 'navbarViews.php' ;?>

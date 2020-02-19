@@ -10,19 +10,19 @@ if (isset($_SESSION['message'])) {
 
 if (isset($_GET['id']) && $_GET['id'] > 0) {
     //création d'une instance de classe Patient
-    $patient = new Patient();
+    $appointment = new Appointment();
 
-    $patient->id = htmlspecialchars($_GET['id']);
+    $appointment->id = htmlspecialchars($_GET['id']);
 
-    //récupération du profil Patient
-    $patientProfile = $patient->getPatientProfile();
+    //récupération des infos du rendez-vous
+    $appointmentInfo = $appointment->getAppointmentInfo();
 
-    if (!is_object($patientProfile)) {
-        header('Location: ../views/exo2_listPatient.php');
+    if (!is_object($appointmentInfo)) {
+        header('Location: ../views/exo6_listAppointment.php');
         exit();
     }
 } else {
-    header('Location: ../views/exo2_listPatient.php');
+    header('Location: ../views/exo6_listAppointment.php');
     exit();
 }
 ?>

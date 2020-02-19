@@ -13,8 +13,28 @@
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="exo3_profilePatient.php">Exercice 3</a>                    
-                </li>
-           
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="exo4_editPatient.php">Exercice 4</a>                    
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="exo5_createAppointment.php">Exercice 5</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="exo6_listAppointment.php">Exercice 6</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="exo7_getAppointment.php">Exercice 7</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="exo8_editAppointment.php">Exercice 8</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="exo9_showAppointment.php">Exercice 9</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="exo10_deleteAppointment.php">Exercice 10</a>
+            </li>
         </ul>
     </div>
 </nav>

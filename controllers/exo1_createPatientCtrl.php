@@ -7,7 +7,7 @@ define('DATE_REGEX', '/^(19|20)[0-9]{2}-[0-9]{2}-[0-9]{2}$/');
 //regex TÉLÉPHONE
 define('PHONE_REGEX', '/^(0|\+33)[1-9]([-. ]?[0-9]{2}){4}$/');
 //regex MAIL
-define('MAIL_REGEX', '/\A[A-Z0-9.%+-]+@[A-Z0-9.-]+.[A-Z]{2,}\Z/i');
+define('MAIL_REGEX', '/^[^\W]?[a-zA-Z0-9]+(\.[a-zA-Z0-9]+)*\@[a-zA-Z0-9]+(\.[a-zA-Z0-9]+)*\.[a-zA-Z]{2,4}$/');
 
 if (isset($_POST['submit'])) {
     //création d'une instance de classe Patient.
@@ -74,12 +74,11 @@ if (isset($_POST['submit'])) {
 
         if ($success) {
             $_SESSION['message'] = 'Le patient a bien été créé';
+            header('Location: exo2_listPatient.php?id=' . $profile->id);
+            exit();
         } else {
-            $_SESSION['message'] = 'Le patient n\'a pas pu être créé';
+            $message = 'Le patient n\'a pas pu être créé';
         }
-
-        header('Location: ../views/exo2_listPatient.php');
-        exit();
     }
 }
 ?>

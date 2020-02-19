@@ -1,4 +1,5 @@
 <?php
+
 //création de la classe database
 class Database{
   //visibilité private, se restreint au contexte de la classe ici 'database'.

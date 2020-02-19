@@ -1,6 +1,5 @@
 <?php
 include 'header.php';
-include 'navbar.php';
 ?>
 <!-- Titre du site-->
 <h1 class="text-center">Bienvenue sur le site du Central Hospital</h1>
